@@ -1,0 +1,350 @@
+/* smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+a {
+    color: white;
+}
+
+/*header CSS */
+header{
+    background-color:#373738;
+    padding:1px;
+}
+.inline-block {
+    display:inline-block;
+    vertical-align:top; 
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    margin:20px;
+    cursor:pointer;
+list-style-type: none;
+}
+
+.logo {
+    width:23%;
+    padding:1%;
+    text-align:center;
+    vertical-align:top;
+}
+
+nav {
+
+    padding:1%;
+    padding-right: 0px;
+    width:55%; /*65+8=73%*/ 
+    position:absolute;
+    right:0px;
+}
+
+.navigation ul{
+    float:right;
+    
+}
+a:link {
+    text-decoration: none;
+
+}
+
+#contactInfo {
+    padding: 30px;
+    width:300px;
+    display:none;
+    color: white;
+    position:absolute;
+    right:0px;
+    text-align:center;
+    border:solid 1px white;
+    font-size: 20px;
+}
+
+.modalContent {
+   /* display:none;*/
+   color:black;
+   padding:20px;
+/* kyles z index*/
+    z-index:105;
+   /* display:none;*/
+}
+
+/*.modalContent p {
+    border:solid 2px red;
+}
+ kyle's modal */
+.modalBackground {
+    display:none;
+    position:fixed;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,0.6);
+    z-index:100;
+    
+}
+.close {
+    float:right;
+    font-size:28px;
+    font-weight:bold;
+    /*border:1px solid black;*/
+}
+.modal {
+    display:none;
+   border:solid 1 px red;
+    position:fixed;
+    height:25%;
+    width:25%;
+  /*  z-index:105; kyles */
+    overflow:auto;
+    margin-left:1200px;
+    background-color: ghostwhite;
+}
+/* hero Image CSS */
+
+.heroImg{
+    height:600px;
+    padding:25px;
+    background-color: pink;
+
+}
+
+section {
+    background-image: url("../images/brandheroimage.PNG"); /*background image used*/
+    background-position:center;
+    background-size: cover;
+    border-color:#373738;
+    height:600px;
+    background-repeat:no-repeat;
+    background-color: papayawhip; /* if image is unavailable*/
+    backface-visibility: visible 50%;
+}
+
+.content img{  /* resizing my image png */
+    height:100px;
+    width:100px;
+    margin-left:225px;
+    margin-top:20px;
+}
+
+.content{
+    width:550px;
+    height:400px;
+    margin:0 auto;
+    margin-top:50px;
+    background-color:gainsboro;
+    box-shadow:10px 15px black;
+    background-origin: border-box;
+}
+
+.content p{
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+    text-align: center;
+    margin-top:20px;
+}
+
+button{
+    text-align: center;
+    border:5px;
+    padding:10px;
+    color: white;
+    background-color: black;
+    margin:4px;
+    margin-left:225px;
+    margin-top:40px;
+}
+
+/* trying hover in css*/
+.resumeButton:hover{
+    transform:scale(1.5);
+}
+
+/* Footer CSS */
+
+footer{
+    background-color:#373738;
+    padding:10px;
+}
+
+
+.footerUL{
+    vertical-align: top;
+
+}
+
+/* step 4 My UX skills section coded using CSS flex */
+
+.mySkills{
+    background-color:#373738;
+    background-image: none;
+    height:408px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mySkills h1 {
+    text-align: center;
+    margin-top:0px;
+    color:white;
+}
+
+.mySkills p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+}
+
+.flexContainer {
+  /* border: solid 5px red;*/
+    display:flex;
+    margin:0px;
+ 
+}
+
+#flexDirection{
+    background-color:red;
+    flex-direction:row;
+}
+
+.flex_item{
+    width:33%;
+    padding:10px;
+    margin: 0 auto;
+    text-align:center;
+    background-color:lightgray;
+    /*border: solid 5px red;*/
+}
+
+
+
+
+/* step 5 My work section constructed using CSS grid */
+
+.myWork{
+    background-color:#373738;
+    background-image: none;
+    height:900px;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.myWork h4{
+   /* color:white;*/
+    text-align:left;
+    margin-left:57px;
+}
+
+.myWork img{
+    height:200px;
+    width:200px;
+}
+
+.myWork button{
+    width: 100px;
+    height: 50px;
+    color:white;
+}
+
+.myWork h1 {
+   /* color:white;*/
+    margin-top:20px;
+    text-align:center;
+}
+
+.gridDescriptionArea p{
+    margin-left:60px;
+  /*  color:white;*/
+}
+.workGrid{
+    display:grid;
+    height:700px;
+  /*  margin-left: 20px;
+    margin-bottom:10px;*/
+    margin:0px 8%;
+    margin-bottom:50px;
+  /*  border: solid 5px red;*/
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "gridImageArea" "gridDescrptionArea";
+
+}
+
+.gridDescriptionArea button{
+    margin-left:60px;
+}
+
+#viewAll{
+    margin:40px 0px 0px 20px;
+ /*   margin-left: 20px;
+    margin-bottom:0px;*/
+    text-align:center;
+    color:white;
+
+}
+
+/* step 6 media query */
+@media only screen and (max-width: 600px){
+    /* resize the hero Image*/
+.mySkills{
+    width:100%;
+}
+
+ .content{
+        height:400px;
+        padding:0px;
+        width:100%;
+        background-image:none;
+    
+    }
+
+    .heroImg{
+        height:500px;
+    }
+/* resize the flex container*/
+.mySkills{
+    margin-top:0px;
+}
+ #flexDirection{
+    flex-direction:column;
+flex-wrap:wrap;
+ }
+ 
+ .flex_item{
+ 
+    width:100%;
+        /* padding:20px;
+         margin: 0 auto;*/
+         text-align:center;
+         width: 100%;
+     
+         background-color:lightgray;
+     }  
+
+    /* resize the grid */
+.myWork{
+    margin-top:600px;
+    height:1700px;
+
+}
+.workGrid{
+     /*   display:grid;
+        background-color: red;
+        height:400px;
+        margin-left: 20px;
+        margin-bottom:10px;
+        margin:0px 8%;
+        margin-bottom:50px;
+        border: solid 5px red;*/
+        display:grid;
+        color:white;
+        background-color:#373738;
+        grid-template-columns: 1fr;
+        justify-items:center;
+        grid-template-rows: 200px 300px 200px 300px 200px 300px;
+        grid-template-areas: "gridImageArea" 
+        "gridDescriptionArea";
+}
+#viewAll{
+    margin-top:870px;
+}
+
+}

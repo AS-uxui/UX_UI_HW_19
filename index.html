@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Week 19 homework</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header class="navigation">
+            <div class="inline-block logo">
+                <img src="images/logo.PNG" alt="LOGO">
+            </div>
+            <nav class="inline-block">
+                <ul>
+                    <li class="inline-block" id="about">About</li>
+                    <li class="inline-block" id="skills"><a href="#mySkills">Skills</a></li>
+                    <li class="inline-block" id="work"><a href="#myWork">Work</a></li>
+                    <li class="inline-block" id="contactMe">Contact</li>
+                </ul>
+            </nav>
+            <div id="contactInfo"> <!-- data is not displayed see css -->
+                Arathi Shreeram <br>555-555-5555<br>abc@gmail.com
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modalContent">
+                    <span class="close">&times;</span>
+                    <p>Lots of things about me</p>
+                </div>
+            </div>
+            <div class="modalBackground">
+                
+            </div>
+            
+        </header>
+        <section class="heroImg">
+                   <div class="content">
+                    <img src="images/myimage.jpg" alt="My Image">
+                    <p>Hello, I am Arathi Shreeram, a freelance UX/UI designer. I specialize in interacting with business stakeholders and end users to understand their needs and I collaborate with the development team to create the solution. My skills include wireframing, mockups, prototyping using iRise, Figma, Adobe XD, and Invision.</p>
+                    <button type="button" class="resumeButton">Download Resume</button>
+                    <!--onclick="alert('Under Construction')" removed the inline on click alert and moved to jQuery-->
+                </div>
+        </section>
+
+<!-- step 3 My skills section constructed using CSS flex-->
+        <section class="mySkills" id="mySkills">
+            <br>
+            <br>
+            <h1>My UX skills</h1>
+            <div class="flexContainer" id="flexDirection">
+                <div class="flex_item">
+                    <img src="images/UXresearch.png">
+                    <h3>User Research</h3>
+                    <p>User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.</p>
+                </div>
+                <div class="flex_item">
+                    <img src="images/userinterfacedesign.png">
+                    <h3>User Interface Design</h3>
+                    <p>User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style.</p>
+                </div>
+                <div class="flex_item">
+                    <img src="images/webdevelopment.jfif">
+                    <h3>Web Development</h3>
+                    <p>Every Web Developer must have a basic understanding of HTML, CSS, and JavaScript. Responsive Web Design is used in all types of modern web development.</p>
+                </div>
+            </div>
+        </section>
+<!-- step 3 My Work section constructed using CSS grid-->
+        <section class="myWork" id="myWork">
+            <br>
+            <br>
+            <h1>My work</h1>
+            <div class="workGrid">
+                <div class="gridImageArea">
+                    <img src="images/happytravels.jfif">
+                </div>
+                <div class="gridDescriptionArea">
+                    <h4>Mobile App "Happy Travels"</h4>
+                    <p>Provide modern travellers with the ability to plan their trips using a mobile app, giving them the flexibility to change plans at their destination to suit needs and budget. Solving travellers problems.</p>
+                    <button>View Project</button>
+                </div>
+                <div class="gridImageArea">
+                    <img src="images/MedSave.jfif">
+                </div>
+                <div class="gridDescriptionArea">
+                    <h4>Mobile App "Med$ave"</h4>
+                    <p>Provide users with convenience and cost savings for out of pocket medicine expenses. Prescription drug refills and finding lower prices to save money for the app user.</p>
+                    <button>View Project</button>
+                </div>
+                <div class="gridImageArea">
+                    <img src="images/ibwcsnip.png">
+                </div>
+                <div class="gridDescriptionArea">
+                    <h4>Government Website Redesign</h4>
+                    <p>The International Boundary and Water Commission, United States and Mexico (IBWC), has its roots in the 1848 Treaty of Guadalupe Hidalgo which established a temporary joint boundary commission to survey, mark and map the new boundary between the two countries.People living along the Southern border with Mexico on local information and citizen forums</p>
+                    <button>View Project</button>
+                </div>
+            </div>
+            <h3 id="viewAll">View all projects</h3>
+    
+        </section>
+
+        <footer>
+            <ul class="footerUL">
+                <li class="inline-block">About</li>
+                <li class="inline-block"><a href="#mySkills">Skills</a></li>
+                <li class="inline-block"><a href="#myWork">Work</a></li>
+                <li class="inline-block" id="contactMeUp">Contact</li>
+            </ul>
+        </footer>
+    </body>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script> <!-- checked this and it works-->
+</html>
