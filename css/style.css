@@ -233,6 +233,21 @@ footer{
     margin-left:57px;
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    margin-left:55px;
+    text-decoration: none;
+    border: solid 2px black;
+    height:20px;
+    width:80px;
+    padding: 10px;
+    font-size:12px;
+    background-color:black;
+    color: white;
+}
+
 .myWork img{
     height:200px;
     width:200px;
